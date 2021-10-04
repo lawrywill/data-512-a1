@@ -29,5 +29,5 @@ The Pageviews API provides access to desktop, mobile web, and mobile app traffic
 
 ## Known issues & other considerations
 * The Legacy Pagecount API only provides data from December 2007 to July 2016, while the Pageviews API provides data from July 2015 to the present.
-* Data from the Pageview API excludes spiders/crawlers, while data from the Pagecounts API does not - this leads to systematically lower view counts from July 2015 onward.
-* Data from the Legacy Pagecount API and the Pageview API overlaps between July 2015 and July 2016. This leads to inflated view counts when summing the data over that period.
+* Data from the Pageview API excludes spiders/crawlers, while data from the Pagecounts API does not - this leads to systematically lower view counts in the Pageview data.
+* Data from the Legacy Pagecount API and the Pageview API overlaps between July 2015 and July 2016. In the visualization, rather than summing them up and double-counting the views, I have chosen to show only the Pageview data rather than the Legacy Pagecount data. The Pageview data is preferable since it excludes web spiders/crawlers.
