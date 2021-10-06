@@ -28,6 +28,6 @@ The Pageviews API provides access to desktop, mobile web, and mobile app traffic
 * __pageview_mobile_views__: mobile view count pulled from Pageviews API (sum of mobile web + mobile app views)
 
 ## Known issues & other considerations
-* The Legacy Pagecount API only provides data from December 2007 to July 2016, while the Pageviews API provides data from July 2015 to the present.
+* The Legacy Pagecount API only provides data from December 2007 to July 2016, while the Pageviews API provides data from July 2015 to the present. Data overlaps between the two from July 2015 to July 2016. 
 * Data from the Pageview API excludes spiders/crawlers, while data from the Pagecounts API does not - this leads to systematically lower view counts in the Pageview data.
-* Data from the Legacy Pagecount API and the Pageview API overlaps between July 2015 and July 2016. In the visualization, rather than summing them up and double-counting the views, I have chosen to show only the Pageview data rather than the Legacy Pagecount data. The Pageview data is preferable since it excludes web spiders/crawlers.
+* The last month of Pagecount data (July 2016) looks like it's only partial data, as it has far lower views than the preceding months. For completeness, I haven't removed it, but it looks like an anomaly in the graph.
